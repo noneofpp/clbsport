@@ -6,103 +6,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TÀI KHOẢN - CÂU LẠC BỘ THỂ THAO THPT TRẦN PHÚ</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/img/[NEED TO UPDATE IMAGE PATH: favicon.png]" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <div class="alert">
-        <div class="info">
-            <p>HÃY CÙNG NHAU VẬN ĐỘNG VÀ BÙNG NỔ NĂNG LƯỢNG!</p>
+    <div class="main-hero">
+        <!-- Register -->
+        <div class="form-register displayNone">
+            <form id="register-form">             
+                <h2>ĐĂNG KÝ</h2>
+                <div class="text-box">
+                    <h4>Tên của bạn</h4>
+                    <input type="text" name="firstName" placeholder="Your First Name">
+                </div>
+                <div class="text-box">
+                    <h4>Họ của bạn</h4>
+                    <input type="text" name="lastName" placeholder="Your Last Name">
+                </div>
+                <div class="text-box">
+                    <h4>Email</h4>
+                    <input type="email" name="email" placeholder="Your Email">
+                </div>
+                <div class="text-box">
+                    <h4>Mật khẩu</h4>
+                    <input type="password" name="password" placeholder="Your Password">
+                </div>
+                <div class="text-box">
+                    <h4>Nhập lại mật khẩu</h4>
+                    <input type="password" name="confirmPassword" placeholder="Repeat Password">
+                </div>
+                <div class="text-box">
+                    <button type="submit">Đăng ký</button>
+                    <p id="toLogin">Đã có tài khoản. Đăng nhập ngay!</p>
+                </div>
+            </form>           
         </div>
-    </div>
 
-    <div class="main">
-        <div class="nav">
-            <div class="nav-left">
-                <ul>
-                    <li><a href="index.html" style="text-decoration: none; text-transform: none;">TRANG CHỦ</a></li> 
-                    <li><a href="shop.html" style="text-decoration: none; text-transform: none; color: #1E90FF;">CỬA HÀNG</a></li>
-                    <li><a href="account.html" style="text-decoration: none; text-transform: none; color: #1E90FF;">TÀI KHOẢN</a></li>
-                </ul>
-            </div>
-            <div class="nav-right">
-                <input type="text" placeholder="Search sports, accounts, etc...">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <a href="account.html"><i class="fa-regular fa-user"></i></a>
-            </div>
+        <!-- Login -->
+        <div class="form-login">
+            <form id="login-form">         
+                <h2>ĐĂNG NHẬP</h2>
+                <div class="text-box">
+                    <h4>Email</h4>
+                    <input type="email" name="email" placeholder="Your Email">
+                </div>
+                <div class="text-box">
+                    <h4>Mật khẩu</h4>
+                    <input type="password" name="password" placeholder="Your Password">
+                </div>
+                <div class="text-box">
+                    <button type="submit">Đăng nhập</button>
+                    <p id="toRegister">Tôi chưa có tài khoản</p>
+                </div>
+            </form>           
         </div>
 
-        <div class="slide">
-            <img src="./assets/img/sports_club_banner.png" alt="Câu lạc bộ Thể thao THPT Trần Phú Banner">
-        </div>
-
-        <div class="support-page">
-            <div class="slide-second" style="padding: 10rem 0;">
-                <div class="left">
-                    <h2>Bạn cần chúng tôi giúp gì?</h2> 
-                    <input class="info-help" type="text" name="" id="" placeholder="Nhập thắc mắc của bạn...">
-                    <input class="button" type="button" value="PHẢN HỒI">
+        <!-- User profile -->
+        <div class="userProfile container profileDisplayNone">
+            <div class="main-body">
+                <!-- Breadcrumb -->
+                <nav aria-label="breadcrumb" class="main-breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html" style="text-decoration: none; color: #FFFFFF;">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="index.html" style="text-decoration: none; color: #FFFFFF;">Đăng xuất</a></li>
+                    </ol>
+                </nav>
+                <!-- /Breadcrumb -->
+        
+                <div class="row gutters-sm">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex flex-column align-items-center text-center">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Thành viên" class="rounded-circle" width="150">
+                                    <div class="mt-3">
+                                        <h4>Thành viên</h4>
+                                        <p class="text-secondary mb-1">Tên người dùng</p>
+                                        <p class="text-muted font-size-sm">THPT Trần Phú</p>
+                                        <button class="btn btn-primary">Theo dõi</button>
+                                        <button class="btn btn-outline-primary">Nhắn tin</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0" style="color: #000000;">Tên đầy đủ</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        Nguyễn Văn A
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0" style="color: #000000;">Email</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e396908691a39092968a8784828e86cd958d">[email protected]</a>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0" style="color: #000000;">Số điện thoại</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        (+84) 986 878 187
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <h6 class="mb-0" style="color: #000000;">Địa chỉ</h6>
+                                    </div>
+                                    <div class="col-sm-9 text-secondary">
+                                        THPT Trần Phú, Việt Nam
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <a class="btn btn-primary" target="__blank">Chỉnh sửa</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="footer">
-            <img src="./assets/img/[NEED TO UPDATE IMAGE PATH: grass-layer.webp]" alt="footer" width="100%">
-            <div class="nav-footer">
-                <table>
-                    <tr>
-                        <th>TÌM HIỂU THÊM</th>
-                        <th>PHƯƠNG TIỆN TRUYỀN THÔNG</th>
-                        <th>CÁC HOẠT ĐỘNG KHÁC</th>
-                        <th>THAM GIA</th>
-                    </tr>
-                    <tr>
-                        <td>Thông tin về chúng tớ</td>
-                        <td>
-                            <div class="social">
-                                <i class="fab fa-facebook"></i>
-                                Facebook
-                            </div>
-                        </td>
-                        <td>Khám phá các môn thể thao</td>
-                        <td>Đăng ký tham gia cùng chúng tớ tại đây</td>
-                    </tr>
-                    <tr>
-                        <td>Liên hệ</td>
-                        <td>
-                            <div class="social">
-                                <i class="fab fa-twitter"></i>
-                                Twitter
-                            </div>
-                        </td>
-                        <td>Các sự kiện thể thao mới</td>
-                        <td>
-                            <input type="text" placeholder="Enter your email address">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>FAQ</td>
-                        <td>
-                            <div class="social">
-                                <i class="fab fa-instagram"></i>
-                                Instagram
-                            </div>
-                        </td>
-                        <td>Trang hỗ trợ</td>
-                        <td>
-                            <button>Đăng Ký</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="copyright">
-                © 2025 CÂU LẠC BỘ THỂ THAO THPT TRẦN PHÚ.
-            </div>
-        </div>
     </div>
+
+    <div class="onTop">
+        <a href="#top" style="color: white"><button id="myBtn"><i class="fas fa-angle-up"></i></button></a>
+    </div>
+
+    <!-- START - CHANGE MODE -->
+    <div class="changeMode" onclick="darkModeButton()">
+        <i id="disableMode" class="disableMode fas fa-sun fa-2x"></i>
+        <i id="activeMode" class="fas fa-moon fa-2x"></i>
+    </div>
+    <!-- END - CHANGE MODE -->
+
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="app.js"></script>
 </body>
 </html>
