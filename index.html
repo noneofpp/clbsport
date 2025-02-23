@@ -6,136 +6,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRANG CHỦ - CÂU LẠC BỘ THỂ THAO THPT TRẦN PHÚ</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./assets/img/[NEED TO UPDATE IMAGE PATH: favicon.png]" type="image/x-icon">
 </head>
 <body>
-    <div class="alert">
-        <div class="info">
-            <p>HÃY CÙNG NHAU VẬN ĐỘNG VÀ BÙNG NỔ NĂNG LƯỢNG!</p>
+    <!-- START - NAVBAR -->
+    <div id="topbutton" href="#top" class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="./assets/img/[NEED TO UPDATE IMAGE PATH: logo.png]" alt="" width="100px"></a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html" style="color: #FF4500;">Trang chủ</a></li>
+                <li><a href="shop.html">Cửa hàng</a></li>
+                <li><a href="account.html">Tài khoản</a></li>
+            </ul>
+        </div>
+        <div class="tool">
+            <div class="search">
+                <i class="hiddenBox fas fa-search"></i>
+            </div>
+            <div class="search-box displayNone">
+                <input type="text" value="" placeholder="Tìm kiếm">
+            </div>
+            <div class="account">
+                <a href="account.html" style="text-decoration: none; color: #FFFFFF;"><p>ĐĂNG NHẬP</p></a>
+            </div>
         </div>
     </div>
 
-    <div class="main">
-        <div class="nav">
-            <div class="nav-left">
+    <div class="navbar-second">
+        <div class="navbar-scale">
+            <img src="./assets/img/[NEED TO UPDATE IMAGE PATH: favicon.png]" alt="">
+            <div class="menu-hidden">
+                <i class="scaleMenuFirst fas fa-bars fa-2x"></i>
+            </div>
+        </div>
+        <div class="navbar-scale-menu displayMenuNone">
+            <div class="menu">
                 <ul>
-                    <li><a href="index.html" style="text-decoration: none; text-transform: none;">TRANG CHỦ</a></li> 
-                    <li><a href="shop.html" style="text-decoration: none; text-transform: none; color: #1E90FF;">CỬA HÀNG</a></li>
-                    <li><a href="account.html" style="text-decoration: none; text-transform: none; color: #1E90FF;">TÀI KHOẢN</a></li>
+                    <li><a href="index.html" style="color: #FF4500;">Trang chủ</a></li>
+                    <li><a href="shop.html">Cửa hàng</a></li>
+                    <li><a href="account.html">Tài khoản</a></li>
                 </ul>
             </div>
-            <div class="nav-right">
-                <input type="text" placeholder="Search sports, events, etc...">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <a href="account.html"><i class="fa-regular fa-user"></i></a>
+            <div class="tool">
+                <div class="account">
+                    <a href="account.html" style="text-decoration: none; color: #FFFFFF;"><p>ĐĂNG NHẬP</p></a>
+                </div>
+                <div class="search-box">
+                    <input type="text" value="" placeholder="Tìm kiếm">
+                </div>
+            </div>
+        </div>            
+    </div>
+    <!-- END - NAVBAR -->
+
+    <div class="container-hero">
+        <!-- START - HEADER -->
+        <div class="header">
+            <div class="container">
+                <div class="container-content-first">
+                    <img src="./assets/img/[NEED TO UPDATE IMAGE PATH: squidgame-header.png]" alt="" width="300px">
+                    <h2>Câu lạc bộ Thể thao</h2>
+                    <p class="paragraph">
+                        Hàng trăm thành viên tham gia các môn thể thao tại THPT Trần Phú: thi đấu, rèn luyện, và bùng nổ năng lượng. Đón chờ những giải thưởng hấp dẫn và cơ hội phát triển thể chất!
+                    </p>
+                    <p class="btn-start"><a href="#hook">BẮT ĐẦU</a></p>
+                </div>
+                <div class="container-content-second">
+                    <div class="container-content-second-hero-1">
+                        <img src="./assets/img/[NEED TO UPDATE IMAGE PATH: favicon.png]" alt="" width="50px">
+                        <p>Xem mọi thông tin về CLB Thể thao.</p>
+                    </div>
+                    <div class="container-content-second-hero-2">
+                        <p class="main"><a href="shop.html">TÌM HIỂU NGAY</a></p>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- END - HEADER -->
 
-        <div class="slide">
-            <img src="./assets/img/sports_club_banner.png" alt="Câu lạc bộ Thể thao THPT Trần Phú Banner">
+        <!-- START - HOOK -->
+        <div id="hook">
+            <div class="hook-hr"></div>
+            <div class="hook-hr"></div>
+            <div class="hook-text">Một hành trình năng động, thử thách thể chất và tinh thần tại THPT Trần Phú.</div>
+            <div class="hook-hr"></div>
+            <div class="hook-hr"></div>
+        </div>
+        <!-- END - HOOK -->
+
+        <!-- START - CHANGE MODE -->
+        <div class="changeMode" onclick="darkModeButton()">
+            <i id="disableMode" class="disableMode fas fa-sun fa-2x"></i>
+            <i id="activeMode" class="fas fa-moon fa-2x"></i>
+        </div>
+        <!-- END - CHANGE MODE -->
+
+        <!-- START - EPISODES (Thay bằng các môn thể thao) -->
+        <div class="episodes-container">
+            <div class="episodes-title">
+                <p class="title">Câu lạc bộ Thể thao</p>
+                <p class="sesson">Mùa hoạt động 2025</p>
+                <p class="year">Năm phát hành: 2025</p>
+                <p class="description">Tham gia các môn thể thao tại THPT Trần Phú để rèn luyện sức khỏe, thi đấu và bùng nổ năng lượng cùng bạn bè!</p>
+            </div>
+
+            <div class="row">
+                <div class="column">
+                    <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: volleyball.jpg]" alt="">
+                    <h3>1. Bóng chuyền</h3>
+                    <p>Tham gia các trận đấu bóng chuyền đầy kịch tính, rèn luyện phản xạ và teamwork tại CLB Thể thao.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: basketball.jpg]" alt="">
+                    <h3>2. Bóng rổ</h3>
+                    <p>Khám phá kỹ năng ném rổ và tốc độ với các buổi tập luyện chuyên nghiệp tại CLB.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: soccer.jpg]" alt="">
+                    <h3>3. Bóng đá</h3>
+                    <p>Tham gia các trận đấu bóng đá sôi động, phát triển kỹ thuật và tinh thần đồng đội.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: running.jpg]" alt="">
+                    <h3>4. Chạy bộ</h3>
+                    <p>Rèn luyện sức bền và sức khỏe toàn diện với các buổi chạy bộ định kỳ tại trường.</p>
+                </div>
+                <div class="column">
+                    <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: tennis.jpg]" alt="">
+                    <h3>5. Quần vợt</h3>
+                    <p>Thử sức với kỹ thuật đánh bóng và chiến thuật tại các buổi tập quần vợt của CLB.</p>
+                </div>
+            </div>
+        </div> 
+        <!-- END - EPISODES --> 
+
+        <div class="onTop">
+            <a href="#top" style="color: white"><button id="myBtn"><i class="fas fa-angle-up"></i></button></a>
         </div>
 
-        <h1 class="title">CÁC MÔN THỂ THAO ĐANG HOT</h1>
-
-        <div class="categories">
-            <div class="card">
-                <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: volleyball.jpg]" alt="Volleyball">
-                <h5>Bóng chuyền</h5>
-            </div>
-            <div class="card">
-                <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: basketball.jpg]" alt="Basketball">
-                <h5>Bóng rổ</h5>
-            </div>
-            <div class="card">
-                <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: soccer.jpg]" alt="Soccer">
-                <h5>Bóng đá</h5>
-            </div>
-            <div class="card">
-                <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: running.jpg]" alt="Running">
-                <h5>Chạy bộ</h5>
-            </div>
+        <!-- START - FOOTER -->
+        <div id="footer">
+            <p class="title">Bạn có câu hỏi? <a href="#">Liên hệ với chúng tôi.</a></p>
+            <table style="width: 100%;">
+                <tr>
+                    <td>Câu hỏi thường gặp</td>
+                    <td>Trung tâm trợ giúp</td>
+                    <td>Tài khoản</td>
+                    <td>Trung tâm đa phương tiện</td>
+                </tr>
+                <tr>
+                    <td>Quan hệ với nhà đầu tư</td>
+                    <td>Việc làm</td>
+                    <td>Các cách tham gia</td>
+                    <td>Điều khoản sử dụng</td>
+                </tr>
+                <tr>
+                    <td>Quyền riêng tư</td>
+                    <td>Tùy chọn cookie</td>
+                    <td>Thông tin doanh nghiệp</td>
+                    <td>Liên hệ với chúng tôi</td>
+                </tr>
+                <tr>
+                    <td>Kiểm tra tốc độ</td>
+                    <td>Thông báo pháp lý</td>
+                    <td>Chỉ có trên CLB Thể thao</td>
+                </tr>
+            </table>
+            <p class="nocopyright">Bản quyền thuộc về <a href="https://bit.ly/3j9Hgh3">Lê Quốc Khánh</a> & <a href="https://bit.ly/3vfCa7L">Đặng Nguyên Khải</a></p>
         </div>
-
-        <h1 class="title">CÁC MÔN THỂ THAO KHÁC</h1>
-      
-        <div class="categories">
-            <div class="card">
-                <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: tennis.jpg]" alt="Tennis">
-                <h5>Quần vợt</h5>
-                <i class="fas fa-arrow-circle-right"></i>
-            </div>
-            <div class="card">
-                <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: badminton.jpg]" alt="Badminton">
-                <h5>Cầu lông</h5>
-                <i class="fas fa-arrow-circle-right"></i>
-            </div>
-            <div class="card">
-                <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: swimming.jpg]" alt="Swimming">
-                <h5>Bơi lội</h5>
-                <i class="fas fa-arrow-circle-right"></i>
-            </div>
-            <div class="card">
-                <img src="./assets/img/sports/[NEED TO UPDATE IMAGE PATH: gym.jpg]" alt="Gym">
-                <h5>Tập gym</h5>
-                <i class="fas fa-arrow-circle-right"></i>
-            </div>
-        </div>
-
-        <div class="footer">
-            <img src="./assets/img/[NEED TO UPDATE IMAGE PATH: grass-layer.webp]" alt="footer" width="100%">
-            <div class="nav-footer">
-                <table>
-                    <tr>
-                        <th>TÌM HIỂU THÊM</th>
-                        <th>PHƯƠNG TIỆN TRUYỀN THÔNG</th>
-                        <th>CÁC HOẠT ĐỘNG KHÁC</th>
-                        <th>THAM GIA</th>
-                    </tr>
-                    <tr>
-                        <td>Thông tin về chúng tớ</td>
-                        <td>
-                            <div class="social">
-                                <i class="fab fa-facebook"></i>
-                                Facebook
-                            </div>
-                        </td>
-                        <td>Khám phá các môn thể thao</td>
-                        <td>Đăng ký tham gia cùng chúng tớ tại đây</td>
-                    </tr>
-                    <tr>
-                        <td>Liên hệ</td>
-                        <td>
-                            <div class="social">
-                                <i class="fab fa-twitter"></i>
-                                Twitter
-                            </div>
-                        </td>
-                        <td>Các sự kiện thể thao mới</td>
-                        <td>
-                            <input type="text" placeholder="Enter your email address">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>FAQ</td>
-                        <td>
-                            <div class="social">
-                                <i class="fab fa-instagram"></i>
-                                Instagram
-                            </div>
-                        </td>
-                        <td>Trang hỗ trợ</td>
-                        <td>
-                            <button>Đăng Ký</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="copyright">
-                © 2025 CÂU LẠC BỘ THỂ THAO THPT TRẦN PHÚ.
-            </div>
-        </div>
+        <!-- END - FOOTER -->
     </div>
 </body>
 </html>
