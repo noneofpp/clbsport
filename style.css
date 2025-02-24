@@ -14,7 +14,7 @@ textarea:focus, input:focus {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 16px;
-    background-color: #252525; /* Màu đen tối làm nền chính */
+    background-color: #E95354; /* Màu đỏ hồng làm nền chính (thay #252525) */
 }
 
 .title {
@@ -24,8 +24,8 @@ textarea:focus, input:focus {
 }
 
 .alert {
-    background-color: #A56ABD; /* Màu tím nhạt cho banner thông báo */
-    color: #fff;
+    background-color: #fff; /* Màu trắng thay cho màu tím (bỏ #A56ABD) */
+    color: #E95354; /* Màu đỏ hồng cho chữ trong alert */
 }
 
 .alert .info {
@@ -39,12 +39,12 @@ textarea:focus, input:focus {
 .alert .info a {
     font-size: 14px;
     font-weight: 600;
-    color: #fff;
+    color: #E95354;
 }
 
 .alert .info a i {
     padding: 0 8px;
-    color: #fff;
+    color: #E95354;
 }
 
 .alert .info p {
@@ -58,7 +58,7 @@ textarea:focus, input:focus {
     align-items: center;
     padding: 17px 16px;
     width: 100%;
-    background-color: #252525; /* Màu đen tối cho nav */
+    background-color: #E95354; /* Màu đỏ hồng cho nav (thay #252525) */
     color: #fff;
 }
 
@@ -83,7 +83,7 @@ textarea:focus, input:focus {
 }
 
 .nav-left ul li:hover {
-    color: #E95354; /* Màu đỏ hồng khi hover */
+    color: #fff; /* Màu trắng khi hover (thay #E95354 để tránh trùng nền) */
     transition: 0.5s;
 }
 
@@ -98,9 +98,9 @@ textarea:focus, input:focus {
 .nav-right input {
     border: none;
     border-radius: 24px;
-    background-color: #A56ABD; /* Màu tím nhạt cho input search */
+    background-color: #fff; /* Màu trắng cho input search (thay #A56ABD) */
     padding: 15px 30px;
-    color: #fff; /* Màu chữ trắng */
+    color: #E95354; /* Màu đỏ hồng cho chữ */
     font-weight: 500;
     width: 280px;
 }
@@ -113,7 +113,7 @@ textarea:focus, input:focus {
     margin: 0 0 0 32px;
     cursor: pointer;
     font-size: 26px;
-    color: #E95354; /* Màu đỏ hồng cho icon người dùng */
+    color: #61CBFF; /* Màu xanh dương nhạt cho icon người dùng */
 }
 
 .fa-magnifying-glass {
@@ -138,7 +138,7 @@ textarea:focus, input:focus {
     width: 100%;
     margin: 16px 0;
     padding: 20px;
-    background-color: #fff; /* Màu nền trắng (không sử dụng màu trong danh sách, giữ trắng để tương phản) */
+    background-color: #fff; /* Màu nền trắng (không dùng màu trong danh sách) */
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -171,7 +171,7 @@ textarea:focus, input:focus {
 .categories .card h5 {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    background-color: #E95354; /* Màu đỏ hồng cho tiêu đề thẻ */
+    background-color: #61CBFF; /* Màu xanh dương nhạt cho tiêu đề thẻ */
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 600;
@@ -205,7 +205,7 @@ textarea:focus, input:focus {
 }
 
 .best-sellers .item .shape-item h2 {
-    color: #252525; /* Màu đen tối cho tiêu đề */
+    color: #E95354; /* Màu đỏ hồng cho tiêu đề */
     height: 30px;
     overflow: hidden;
     line-height: initial;
@@ -222,7 +222,7 @@ textarea:focus, input:focus {
 .best-sellers .item .shape-item .nav-item span {
     font-size: 24px;
     font-weight: bold;
-    color: #A56ABD; /* Màu tím nhạt cho giá trị */
+    color: #61CBFF; /* Màu xanh dương nhạt cho giá trị */
 }
 
 .best-sellers .item .shape-item .nav-item i {
@@ -247,7 +247,7 @@ textarea:focus, input:focus {
     font-size: 16px;
     font-weight: 600;
     padding: 0 0 0 6px;
-    color: #252525; /* Màu đen tối cho chữ */
+    color: #E95354; /* Màu đỏ hồng cho chữ */
 }
 
 .follow p a {
@@ -267,26 +267,26 @@ textarea:focus, input:focus {
 }
 
 .footer {
-    background-color: #252525; /* Màu đen tối cho footer */
+    background-color: #E95354; /* Màu đỏ hồng cho footer (thay #252525) */
     color: #fff;
 }
 
 .footer .nav-footer {
-    background-color: #252525; /* Giữ màu nền footer */
+    background-color: #E95354; /* Giữ màu nền footer */
     text-align: left;
 }
 
 .footer .nav-footer table {
     padding: 80px 0;
     margin: 0 auto;
-    color: #A56ABD; /* Màu tím nhạt cho chữ footer */
+    color: #61CBFF; /* Màu xanh dương nhạt cho chữ footer */
 }
 
 .footer .nav-footer table tr th {
     margin: 0 30px 13px 30px;
     font-size: 18px;
     font-weight: 700;
-    color: #E95354; /* Màu đỏ hồng cho tiêu đề footer */
+    color: #fff; /* Màu tiêu đề footer trắng */
     width: 27%;
 }
 
@@ -297,12 +297,12 @@ textarea:focus, input:focus {
     font-weight: 400;
     line-height: 40px;
     height: 56px;
-    color: #A56ABD; /* Màu tím nhạt */
+    color: #61CBFF; /* Màu xanh dương nhạt */
     cursor: pointer;
 }
 
 .footer .nav-footer table tr td:hover {
-    color: #61CBFF; /* Màu xanh dương nhạt khi hover */
+    color: #fff; /* Màu trắng khi hover */
 }
 
 .footer .nav-footer table tr td .social {
@@ -313,7 +313,7 @@ textarea:focus, input:focus {
 .footer .nav-footer table tr td .social i {
     padding-right: 10px;
     font-size: 23px;
-    color: #E95354; /* Màu đỏ hồng cho icon mạng xã hội */
+    color: #61CBFF; /* Màu xanh dương nhạt cho icon mạng xã hội */
 } 
 
 .footer .nav-footer table tr td input {
@@ -325,8 +325,8 @@ textarea:focus, input:focus {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    color: #fff; /* Màu chữ trắng cho input */
-    background-color: #A56ABD; /* Màu tím nhạt cho input */
+    color: #E95354; /* Màu đỏ hồng cho chữ trong input */
+    background-color: #fff; /* Màu trắng cho input (thay #A56ABD) */
     margin-bottom: 12px;
 }
 
@@ -355,7 +355,7 @@ textarea:focus, input:focus {
     justify-content: space-around;
     align-items: center;
     padding: 16px 0 6.5em 0;
-    color: #A56ABD; /* Màu tím nhạt cho copyright */
+    color: #61CBFF; /* Màu xanh dương nhạt cho copyright */
 }
 
 a {
@@ -365,7 +365,7 @@ a {
 }
 
 a:visited {
-    color: #252525; /* Màu đen tối khi đã truy cập */
+    color: #E95354; /* Màu đỏ hồng khi đã truy cập */
 }
 
 .support-page .slide-second {
@@ -374,7 +374,7 @@ a:visited {
     justify-content: center;
     align-items: flex-start;
     gap: 5rem;
-    background-color: #252525; /* Màu đen tối cho trang hỗ trợ */
+    background-color: #E95354; /* Màu đỏ hồng cho trang hỗ trợ (thay #252525) */
     flex-wrap: wrap;
 }
 
@@ -393,19 +393,19 @@ a:visited {
     width: 100%;
     padding: 1rem;
     margin-bottom: 2rem;
-    border: 1px solid #E95354; /* Màu đỏ hồng cho viền */
+    border: 1px solid #61CBFF; /* Màu xanh dương nhạt cho viền (thay #E95354) */
     border-radius: 0.5rem;
     box-sizing: border-box;
     font-size: 1.2rem;
-    background-color: #fff; /* Màu nền trắng (không sử dụng màu trong danh sách) */
-    color: #252525; /* Màu đen tối cho chữ */
+    background-color: #fff; /* Màu nền trắng (không dùng màu trong danh sách) */
+    color: #E95354; /* Màu đỏ hồng cho chữ */
 }
 
 .support-page .slide-second .button {
     display: block;
     width: 100%;
     padding: 1rem;
-    background-color: #A56ABD; /* Màu tím nhạt cho nút */
+    background-color: #61CBFF; /* Màu xanh dương nhạt cho nút */
     color: white;
     border: none;
     border-radius: 0.5rem;
