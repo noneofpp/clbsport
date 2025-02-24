@@ -75,7 +75,7 @@ textarea:focus, input:focus {
     list-style: none;
     font-size: 14px;
     font-weight: 700;
-    color: #A56ABD; /* Màu tím nhạt cho chữ nav */
+    color: #61CBFF; /* Màu xanh dương nhạt cho chữ nav */
 }
 
 .nav-left ul li {
@@ -83,7 +83,7 @@ textarea:focus, input:focus {
 }
 
 .nav-left ul li:hover {
-    color: #61CBFF; /* Màu xanh dương nhạt khi hover */
+    color: #E95354; /* Màu đỏ hồng khi hover */
     transition: 0.5s;
 }
 
@@ -113,7 +113,7 @@ textarea:focus, input:focus {
     margin: 0 0 0 32px;
     cursor: pointer;
     font-size: 26px;
-    color: #fff; /* Màu icon người dùng */
+    color: #E95354; /* Màu đỏ hồng cho icon người dùng */
 }
 
 .fa-magnifying-glass {
@@ -138,7 +138,7 @@ textarea:focus, input:focus {
     width: 100%;
     margin: 16px 0;
     padding: 20px;
-    background-color: #fff; /* Màu nền trắng cho khu vực thẻ */
+    background-color: #fff; /* Màu nền trắng (không sử dụng màu trong danh sách, giữ trắng để tương phản) */
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -171,7 +171,7 @@ textarea:focus, input:focus {
 .categories .card h5 {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
-    background-color: #A56ABD; /* Màu tím nhạt cho tiêu đề thẻ */
+    background-color: #E95354; /* Màu đỏ hồng cho tiêu đề thẻ */
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 600;
@@ -190,7 +190,7 @@ textarea:focus, input:focus {
 
 .best-sellers .item {
     width: 100%;
-    background-color: #fff;
+    background-color: #fff; /* Giữ màu nền trắng */
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 15px;
 }
@@ -205,7 +205,7 @@ textarea:focus, input:focus {
 }
 
 .best-sellers .item .shape-item h2 {
-    color: #252525;
+    color: #252525; /* Màu đen tối cho tiêu đề */
     height: 30px;
     overflow: hidden;
     line-height: initial;
@@ -222,12 +222,12 @@ textarea:focus, input:focus {
 .best-sellers .item .shape-item .nav-item span {
     font-size: 24px;
     font-weight: bold;
-    color: #E95354; /* Màu đỏ hồng cho giá trị */
+    color: #A56ABD; /* Màu tím nhạt cho giá trị */
 }
 
 .best-sellers .item .shape-item .nav-item i {
     font-size: 32px;
-    color: #61CBFF; /* Màu xanh dương nhạt cho icon */
+    color: #E95354; /* Màu đỏ hồng cho icon */
     cursor: pointer;
 }
 
@@ -286,7 +286,7 @@ textarea:focus, input:focus {
     margin: 0 30px 13px 30px;
     font-size: 18px;
     font-weight: 700;
-    color: #fff; /* Màu tiêu đề footer trắng */
+    color: #E95354; /* Màu đỏ hồng cho tiêu đề footer */
     width: 27%;
 }
 
@@ -313,7 +313,7 @@ textarea:focus, input:focus {
 .footer .nav-footer table tr td .social i {
     padding-right: 10px;
     font-size: 23px;
-    color: #fff; /* Màu icon mạng xã hội */
+    color: #E95354; /* Màu đỏ hồng cho icon mạng xã hội */
 } 
 
 .footer .nav-footer table tr td input {
@@ -331,7 +331,7 @@ textarea:focus, input:focus {
 }
 
 .footer .nav-footer table tr td button {
-    background: #E95354; /* Màu đỏ hồng cho nút đăng ký */
+    background: #61CBFF; /* Màu xanh dương nhạt cho nút đăng ký */
     color: #fff;
     font-weight: 800;
     text-transform: uppercase;
@@ -347,7 +347,7 @@ textarea:focus, input:focus {
 }
 
 .footer .nav-footer table tr td button:hover {
-    background: #61CBFF; /* Màu xanh dương nhạt khi hover */
+    background: #E95354; /* Màu đỏ hồng khi hover */
 }
 
 .copyright {
@@ -397,15 +397,15 @@ a:visited {
     border-radius: 0.5rem;
     box-sizing: border-box;
     font-size: 1.2rem;
-    background-color: #fff; /* Màu nền trắng cho input */
-    color: #252525; /* Màu chữ đen tối */
+    background-color: #fff; /* Màu nền trắng (không sử dụng màu trong danh sách) */
+    color: #252525; /* Màu đen tối cho chữ */
 }
 
 .support-page .slide-second .button {
     display: block;
     width: 100%;
     padding: 1rem;
-    background-color: #61CBFF; /* Màu xanh dương nhạt cho nút */
+    background-color: #A56ABD; /* Màu tím nhạt cho nút */
     color: white;
     border: none;
     border-radius: 0.5rem;
@@ -416,7 +416,7 @@ a:visited {
 }
 
 .support-page .slide-second .button:hover {
-    background-color: #A56ABD; /* Màu tím nhạt khi hover */
+    background-color: #E95354; /* Màu đỏ hồng khi hover */
 }
 
 .support-page .slide-second .right {
