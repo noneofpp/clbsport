@@ -20,13 +20,180 @@ body:not(.light-mode) {
     color: #FFFFFF; /* Màu chữ trắng */
 }
 
-.container-hero {
-    max-width: 1950px;
-    margin: auto;
-    padding-top: 60px; /* Đảm bảo nội dung không bị che bởi navbar cố định */
+/* Main Container */
+.main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 16px;
+    background-color: #FFFFFF; /* Nền trắng */
 }
 
-/* Navbar */
+/* Alert */
+.alert {
+    background-color: #FF4500; /* Màu cam đậm */
+    color: #FFFFFF; /* Màu chữ trắng */
+}
+
+.alert .info {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 16px;
+}
+
+.alert .info p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Nav */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 16px;
+    width: 100%;
+    background-color: #000000; /* Nền đen */
+    color: #FFFFFF; /* Màu chữ trắng */
+    box-shadow: 0 2px 5px rgba(255, 69, 0, 0.3); /* Bóng mờ thể thao */
+}
+
+.nav-left {
+    width: 50%;
+}
+
+.nav-left ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF; /* Màu chữ trắng */
+}
+
+.nav-left ul li {
+    padding: 0 16px;
+}
+
+.nav-left ul li:hover {
+    color: #FF4500; /* Màu cam đậm khi hover */
+    transition: 0.5s;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.nav-right input {
+    border: none;
+    border-radius: 24px;
+    background-color: #FFFFFF; /* Nền trắng */
+    padding: 15px 30px;
+    color: #000000; /* Màu chữ đen */
+    font-weight: 500;
+    width: 280px;
+    border: 1px solid #1E90FF; /* Viền xanh dương sáng */
+}
+
+.nav-right input[type="text"] {
+    font-size: 14px;
+}
+
+.nav-right .fa-user {
+    margin: 0 0 0 32px;
+    cursor: pointer;
+    font-size: 26px;
+    color: #FFFFFF; /* Màu icon trắng */
+}
+
+.fa-magnifying-glass {
+    background-color: #1E90FF; /* Màu xanh dương sáng */
+    border-radius: 24px;
+    color: #FFFFFF; /* Màu icon trắng */
+    padding: 16px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Slide (Banner) */
+.slide img {
+    width: 100%;
+    margin: 2.2em 0 0 0;
+    border-radius: 8px; /* Bo góc nhẹ */
+}
+
+/* Title */
+.title {
+    text-align: center;
+    padding: 2.2em 0 0.5em 0;
+    color: #FF4500; /* Màu cam đậm */
+}
+
+/* Categories (Cards) for Shop */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 16px 0;
+    padding: 20px;
+    background-color: #FFFFFF; /* Nền trắng */
+    border-radius: 12px; /* Bo góc */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bóng mờ nhẹ */
+}
+
+.categories .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 7px 29px rgba(100, 100, 111, 0.2);
+    border-radius: 12px; /* Bo góc */
+    cursor: pointer;
+    background-color: #FFFFFF; /* Nền trắng */
+}
+
+.categories .card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.categories .card h5 {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #000000; /* Nền đen */
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF; /* Màu chữ trắng */
+    margin: 0;
+    padding: 15px;
+}
+
+.categories .card .price {
+    font-size: 16px;
+    color: #1E90FF; /* Màu xanh dương sáng */
+    padding: 10px 0;
+    margin: 0;
+}
+
+.categories .card i {
+    font-size: 24px;
+    color: #FF4500; /* Màu cam đậm */
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Navbar (from original index.html/shop.html) */
 .navbar {
     display: flex;
     justify-content: center;
@@ -368,92 +535,6 @@ body:not(.light-mode) {
     font-weight: 400;
     color: #1E90FF; /* Màu xanh dương sáng */
     padding: 10px;
-}
-
-/* Shop (kept for consistency, though not used in index.html) */
-.container {
-    position: relative;
-    max-width: 1590px;
-    margin: auto;
-    padding: 1rem 0;
-}
-
-.container .row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    padding-bottom: 1rem;
-}
-
-.container .row .column {
-    margin: 20px;
-    cursor: pointer;
-    transition: transform 0.5s;
-    background-color: #FFFFFF; /* Nền trắng */
-    border-radius: 5px; /* Bo góc */
-    box-shadow: 0 2px 5px rgba(255, 69, 0, 0.3); /* Bóng mờ thể thao */
-    overflow: hidden; /* Đảm bảo ảnh không tràn */
-}
-
-.container .row .column:hover {
-    transform: translateY(-10px);
-}
-
-.container .row .column h4 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    letter-spacing: 2px;
-    padding: 8px 0;
-    font-size: 18px;
-    width: 100%;
-    color: #000000; /* Màu chữ đen */
-    text-align: center;
-}
-
-.container .row .column h6 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    letter-spacing: 2px;
-    font-size: 16px;
-    color: #1E90FF; /* Màu xanh dương sáng */
-    text-align: center;
-    padding-bottom: 10px;
-}
-
-.container .row .column img {
-    width: 100%;
-    height: 420px;
-    object-fit: contain;
-    background-color: #F0F0F0; /* Nền xám nhạt cho ảnh */
-}
-
-.container .load-more {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.container .load-more .load-more-btn {
-    background-color: #FF4500; /* Màu cam đậm */
-    outline: none;
-    border: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: #FFFFFF; /* Màu chữ trắng */
-    padding: 16px 30px;
-    cursor: pointer;
-    border-radius: 5px; /* Bo góc */
-    box-shadow: 0 2px 5px rgba(255, 69, 0, 0.3); /* Bóng mờ thể thao */
-}
-
-.container .load-more .load-more-btn:hover {
-    background-color: #FFD700; /* Màu vàng khi hover */
-}
-
-.load-more-drop {
-    display: none;
 }
 
 /* Account */
